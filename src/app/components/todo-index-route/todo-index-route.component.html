@@ -1,0 +1,3 @@
+<div class="container" *ngFor="let todo of todos; let i = index">
+    <app-todo [title]="todo.title" [id]="todo.id" [completed]="todo.completed" [dueDate]="todo.dueDate"></app-todo>
+</div>

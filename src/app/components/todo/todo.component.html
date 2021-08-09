@@ -1,0 +1,7 @@
+    <div class="todos" >
+        <div class="content" (click)="getTodo(id)">{{title | uppercase}}</div>
+        <div class="todo-date">{{dueDate | date: 'yyyy/MM/dd'}}</div>
+        <div class="check-box">
+            <input type="checkbox" [checked]="completed" (change)="completed = !completed">
+        </div>
+    </div>

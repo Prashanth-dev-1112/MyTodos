@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="todo">
+        <div class="content">{{this.todo.data.title | uppercase}}</div>
+        <div class="todo-date">{{this.todo.data.dueDate | date: 'yyyy/MM/dd'}}</div>
+        <div class="check-box">
+            <input type="checkbox" [checked]="this.todo.data.completed"
+                (change)="this.todo.data.completed = !this.todo.data.completed">
+        </div>
+    </div>
+    <div class="home-btn">
+        <button class="btn" (click)="goHome()">Back</button>
+    </div>
+</div>
